@@ -1,0 +1,42 @@
+
+<ion-content [fullscreen]="true">
+  <form
+  (ngSubmit)="login()"
+  #fLogin="ngForm">
+
+<ion-grid fixed>
+   </ion-grid>
+      <ion-row>
+        <ion-col>
+        <img src="/assets/avatars/av-1.png">
+      </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+
+        <ion-list>
+
+          <ion-item>
+            <ion-label>Email</ion-label>
+            <ion-input
+
+            name="email"
+                        type="email"
+                        [(ngModel)]="loginUser.email"
+                        required></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-label>Password</ion-label>
+            <ion-input name="password"
+                        type="password"
+                        [(ngModel)]="loginUser.password"
+                        required></ion-input>
+          </ion-item>
+
+        </ion-list>
+    </ion-col>
+  </ion-row>
+</form>
+
+</ion-content>

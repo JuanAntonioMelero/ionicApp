@@ -8,6 +8,7 @@ import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { PagesPageModule } from './pages/pages.module';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 @NgModule({
 
@@ -16,9 +17,12 @@ import { PagesPageModule } from './pages/pages.module';
     BrowserModule,
      IonicModule.forRoot(),
     AppRoutingModule,
-    PagesPageModule
+    PagesPageModule,
+    HttpClientModule
   ],
-  providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
+  providers: [
+    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
+    HttpClient],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

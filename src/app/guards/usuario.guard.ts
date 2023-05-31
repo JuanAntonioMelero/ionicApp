@@ -12,7 +12,7 @@ export class UsuarioGuard implements CanActivate {
 
 
    canActivate(): Observable<boolean> | Promise<boolean> | boolean {
-    localStorage.setItem('token','hola');
+
     console.log('paso por el guard');
     if(localStorage.getItem("token")){
          return true;

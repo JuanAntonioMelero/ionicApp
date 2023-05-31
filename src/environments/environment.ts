@@ -3,7 +3,9 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  base_url: 'https://server-production-19f6.up.railway.app/api'
+
 };
 
 /*

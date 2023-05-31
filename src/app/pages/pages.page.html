@@ -8,11 +8,11 @@
         <ion-title>Opciones</ion-title>
       </ion-toolbar>
     </ion-header>
-    <ion-content class="ion-padding" routerLinkActive="active" routerLink="./perfil">
+    <ion-content class="ion-padding"  >
       <ion-list  >
       <ion-menu-toggle *ngFor="let item of data"
       autoHide="false">
-      <ion-item [routerLink]="item.redirectTo"
+      <ion-item routerLinkActive="active" [routerLink]="item.redirectTo"
       detail>
 <ion-icon [name]="item.icon" slot="start" color="primary"></ion-icon>
 {{ item.name }}

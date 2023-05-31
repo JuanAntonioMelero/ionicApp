@@ -1,7 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
 import { Componente } from '../interfaces/interfaces';
-import { delay } from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root'
@@ -9,18 +7,18 @@ import { delay } from 'rxjs/operators';
 export class DataService {
   public menuOpts:Componente[]=  [{
     "icon": "american-football-outline",
-    "name": "Action Sheet",
-    "redirectTo": "/perfil"
+    "name": "Perfil",
+    "redirectTo": "./perfil"
   },
   {
     "icon": "alert-circle-outline",
-    "name": "Alert",
-    "redirectTo": "/alert"
+    "name": "Mensajes",
+    "redirectTo": "./mensajes"
   },
   {
     "icon": "beaker-outline",
-    "name": "Avatar",
-    "redirectTo": "/avatar"
+    "name": "Push Notifications",
+    "redirectTo": "./push"
   },
   {
     "icon": "radio-button-off-outline",

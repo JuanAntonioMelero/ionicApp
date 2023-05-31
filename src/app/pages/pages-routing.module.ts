@@ -6,6 +6,7 @@ import { DashboardPage } from './dashboard/dashboard.page';
 import { PerfilPage } from './perfil/perfil.page';
 import { MensajesPage } from './mensajes/mensajes.page';
 import { UsuarioGuard } from '../guards/usuario.guard';
+import { PushPage } from './push/push.page';
 
 const routes: Routes = [
   {
@@ -16,7 +17,8 @@ const routes: Routes = [
     children: [
       { path: '', component: DashboardPage },
       { path: 'perfil', component: PerfilPage },
-      { path: 'mensajes', component: MensajesPage }
+      { path: 'mensajes', component: MensajesPage },
+      { path: 'push', component: PushPage }
 
     ]
   },
@@ -32,6 +34,10 @@ const routes: Routes = [
   {
     path: 'mensajes',
     loadChildren: () => import('./mensajes/mensajes.module').then( m => m.MensajesPageModule)
+  },
+  {
+    path: 'push',
+    loadChildren: () => import('./push/push.module').then( m => m.PushPageModule)
   },
 ];
 

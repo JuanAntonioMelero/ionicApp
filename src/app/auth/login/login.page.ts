@@ -3,7 +3,10 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { IonicSlides, NavController } from '@ionic/angular';
 import { UsuarioService } from 'src/app/services/usuario.service';
+<<<<<<< HEAD
 import Swal from 'sweetalert2';
+=======
+>>>>>>> 34962eb02cdb0b3b3697078dce0e43bb023f55fd
 @Component({
   selector: 'app-login',
   templateUrl: './login.page.html',
@@ -53,6 +56,7 @@ signIn() {
     }, (err)=> {
       console.log(err);
 
+<<<<<<< HEAD
       Swal.fire({
         title: "Error!",
         showClass: {
@@ -63,6 +67,8 @@ signIn() {
         confirmButtonText: 'Aceptar',
         heightAuto:false
       });
+=======
+>>>>>>> 34962eb02cdb0b3b3697078dce0e43bb023f55fd
     });
 }
 
